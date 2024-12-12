@@ -16,10 +16,13 @@ public class Oven
         if (in > maxTemp){
             currentTemp = maxTemp;
         }
-        else if (in == 0){
+        else if (in < 0){
             currentTemp = 0;
         }
+        else{
+            currentTemp = in;
         }
+    }
 
 
     public int getMaxTemp(){
